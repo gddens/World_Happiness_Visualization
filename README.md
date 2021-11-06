@@ -16,6 +16,7 @@ https://ourworldindata.org/grapher/number-with-depression-by-country?tab=table
 
 
 **Mortality_data**
+https://happiness-report.s3.amazonaws.com/2021/MortalityDataWHR2021C2.xlsx
 ![Mortality_data](https://user-images.githubusercontent.com/85839235/140624246-cc5269ce-d8d8-41ae-b945-9a965930e108.png)
 
 
