@@ -1,4 +1,4 @@
-# final_group_project
+# World_Happiness_Visualization
 
 **Population_by_country_worldbank 1960 - 2020**
 https://data.worldbank.org/indicator/SP.POP.TOTL
@@ -48,3 +48,4 @@ Perform statistical analysis using various socio-economical data in order to fin
   - If a satisfactory Life Ladder equation is created, look into plotting a map of the world with each country 1 or 2 main variables that could improve their citizen life ladder sentiment. 
   - Use Tableau for visualizations found from statistical analysis. 
   - Create a website to showcase results using previous website code as leverage. 
+=======
