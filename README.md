@@ -22,7 +22,8 @@ https://happiness-report.s3.amazonaws.com/2021/MortalityDataWHR2021C2.xlsx
 
 
 # Project Overview
-Perform statistical analysis using various socio-economical data in order to find relations between perceived satisfaction and quality of life between invididuals of different countries. Compare how COVID death has impacted the life satisfaction across the world.  
+Perform statistical analysis with the Life Ladder metrics that meaure perceived satisfaction and quality of life for the years 2020 and 2021 in order to compare how Covid has impacted different countries worldwide. Apply Machine Learning in order to predict a person Life Ladder score based on their input to similar questions on the Life Ladder questionnaire. 
+
 
 ## Methodology
 #### Life Ladder ####
