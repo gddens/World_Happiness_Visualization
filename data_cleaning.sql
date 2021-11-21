@@ -68,7 +68,72 @@ FROM life_ladder_2021;
 -- Verify table
 SELECT * FROM life_ladder_complete;
 
+-- Drop nulls
+    DELETE FROM life_ladder_complete 
+    where life_ladder IS NULL 
+    OR gdp_per_capita IS NULL 
+    OR social_support IS NULL
+	OR life_expectancy IS NULL 
+    OR life_choices IS NULL
+	OR generosity IS NULL 
+    OR corruption IS NULL;
+
 -- Export table to Life_ladder_All_Years_csv
+
+-- Verify available years for analysis
+SELECT DISTINCT year
+FROM life_ladder_complete
+ORDER BY year;
+
+-- Create population table
+CREATE TABLE population (
+	country_name VARCHAR(75),
+	country_code VARCHAR (5),
+	year_2019 BIGINT,
+	year_2020 BIGINT
+);
+
+-- Import csv Population_by_country_worldbank_light
+
+-- Verify Table
+SELECT * FROM population 
+SELECT * FROM life_ladder_complete;
+SELECT * FROM mortality;
+
+
+-- Create mortality table
+CREATE TABLE mortality (
+	country VARCHAR (75),
+	population_2020 BIGINT,
+	population_2019 BIGINT,
+	covid_death_ratio DECIMAL(8,4),
+	covid_deaths INT
+);
+
+-- Insert Mortality_data_with_Covid_light into mortality table
+
+-- Left Join life_ladder_complete with mortality by country for the year 2020
+SELECT l.country_name, l.life_ladder, l.gdp_per_capita, l.social_support, l.life_expectancy, l.life_choices,
+	l.generosity, l.corruption, l.positive_affect, l.negative_affect, m.population_2020, m.covid_deaths
+FROM life_ladder_complete AS l
+JOIN mortality AS m
+ON l.country_name = m.country
+WHERE l.year = '2020';
+
+-- Create new table with Left Join life_ladder_complete with mortality by country for the year 2020
+CREATE TABLE lifel_covid_2020 AS
+SELECT l.country_name, l.life_ladder, l.gdp_per_capita, l.social_support, l.life_expectancy, l.life_choices,
+	l.generosity, l.corruption, l.positive_affect, l.negative_affect, m.population_2020, m.covid_deaths
+FROM life_ladder_complete AS l
+JOIN mortality AS m
+ON l.country_name = m.country
+WHERE l.year = '2020';
+
+-- Verify table
+SELECT * FROM lifel_covid_2020;
+
+-- Export table lifel_covid_2020
+
 
 
 
