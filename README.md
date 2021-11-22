@@ -17,5 +17,5 @@ Perform statistical analysis with the Life Ladder metrics that meaure perceived 
   - Plot each country most recent Life Ladder data and color code it by their Life Ladder Score. 
   - Use Tableau for visualizations found from statistical analysis. 
   - Create a website to showcase results using previous website code as leverage. 
-  - Also on this site allow for user to add their own inputs in order to predict their personal Life Ladder score. 
+  - Also on this site allow for user to add their own inputs in order for the algorithm to predict a Life Ladder score based off those inputs. 
 =======
