@@ -5,7 +5,7 @@ https://worldhappiness.report/ed/2021/#appendices-and-data
 ![Life_ladder](https://user-images.githubusercontent.com/85839235/140621693-465df65b-a2e8-49fe-907c-1e273fd1a5e6.png)
 
 # Project Overview
-Perform statistical analysis with the Life Ladder metrics that meaure perceived satisfaction and quality of life between the years 2008-2020. Apply Machine Learning in order to predict a person Life Ladder score based on their input to similar questions on the Life Ladder questionnaire. 
+Perform statistical analysis with the Life Ladder metrics that meaure perceived satisfaction and quality of life between the years 2008-2020. 
 
 ## Methodology
 #### Life Ladder ####
