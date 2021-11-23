@@ -14,4 +14,7 @@ Any images used and CSS are in the subfolders in Happiness folder
 
 `Machine_Learning`: correlation, hierarchical clustering, multi linear regression models files are in this folder. 
 
-`statis` subfolder contains images and plots for latest analysis
+`static` subfolder contains images and plots for latest analysis
+
+
+The remaing files shown in this repository under this branch are superseeded by the above
