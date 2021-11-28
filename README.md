@@ -7,6 +7,10 @@ https://worldhappiness.report/ed/2021/#appendices-and-data
 ## Project Overview
 Perform statistical analysis with the Life Ladder metrics that meaure perceived satisfaction and quality of life between the years 2008-2020.
 
+## Links
+Google Slides presentation: https://docs.google.com/presentation/d/1-TAnhkwUNM6IS-IQDcpyB-aw7qAN2UXNCbUCFCnAhDA/edit#slide=id.p
+Heroku App (dashboard): https://happiness-trial.herokuapp.com/
+
 ## Overview of folder setup:
 
 `Data` : consists of all the data used. Data has been sorted by years, and also converted to .csv files for each year. This is done using python code.
