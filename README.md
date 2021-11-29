@@ -1,4 +1,4 @@
-# Overview of folder setup:
+
 
 `Data` : consists of all the data used. Data has been sorted by years, and also converted to .csv files for each year. This is done using python code.
 
@@ -16,5 +16,3 @@ Any images used and CSS are in the subfolders in Happiness folder
 
 `static` subfolder contains images and plots for latest analysis
 
-
-The remaing files shown in this repository under this branch are superseeded by the above
