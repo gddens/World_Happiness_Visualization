@@ -30,3 +30,14 @@ Any images used and CSS are in the subfolders in Happiness folder
 
 `static` subfolder contains images and plots for latest analysis
 
+## Methodology
+#### Life Ladder ####
+  - Using the Life Ladder dataset, use the most recent year data for each country in order to perform statistical analysis. Visualize each country perceived life satisfaction score using Tableau. 
+  - Using the Life Ladder dataset, use the most recent year data for each country in order to perform a Linear Regression Supervised Machine Learning and train a model with some of the data with the goal of finding an equation that would predict life satisfaction.
+  - Using the Supervised Machine Learning model to predict a Life Ladder score based on user inputs. 
+  
+## Visualizations
+  - Plot each country most recent Life Ladder data and color code it by their Life Ladder Score and Hierarchial Clustering. 
+  - Use Tableau for visualizations found from statistical analysis. 
+  - Create a website to showcase results as well as allow users to input their own data to predict their Life Ladder score. 
+
