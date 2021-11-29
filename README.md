@@ -10,6 +10,7 @@ Perform statistical analysis with the Life Ladder metrics that meaure perceived 
 ## Links
 * Google Slides presentation: https://docs.google.com/presentation/d/1-TAnhkwUNM6IS-IQDcpyB-aw7qAN2UXNCbUCFCnAhDA/edit#slide=id.p
 * Heroku App (dashboard): https://happiness-trial.herokuapp.com/
+* Tableau Story: https://public.tableau.com/app/profile/isabella.helliwell/viz/Book2_16380679399500/Overview
 
 ## Overview of folder setup:
 
