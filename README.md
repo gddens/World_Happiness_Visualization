@@ -1,5 +1,3 @@
-# Overview of folder setup:
-=======
 # World_Happiness_Visualization
 
 **Life_ladder_by_country**
