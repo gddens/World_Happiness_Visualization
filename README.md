@@ -11,7 +11,23 @@ Since the dataset had missging column values, it was decided to drop those rows,
 ## 2.1 .JSON
 In order to read in the dataset in `JavaScript`, the .csv file had to be converted into a .JSON file. This was done using a converter website <ins>https://www.convertcsv.com/csv-to-json.htm</ins>. The result file is saved in 'static/data.js'
 
+## 2.2 File Structure
 
+`Data` : consists of all the data used. Data has been sorted by years, and also converted to .csv files for each year. This is done using python code.
+
+`Happiness`: contains the files needed to deploy local website for this project.
+
+`app.py` is used for the userinput interactions 
+
+`data.js` is the dataset converted to JSON file in order to be used.
+
+`app.js` is used to build the datatable in the html page. It is also used for the filtering function in the website.
+
+ Any images used and CSS are in the subfolders in Happiness folder
+
+`Machine_Learning`: correlation, hierarchical clustering, multi linear regression models files are in this folder. 
+
+`static` subfolder contains images and plots for latest analysis
 
 # 3.Machine Learning
 ## 3.1 Scikit-Learn
@@ -37,31 +53,28 @@ Furthermore, we wanted to explore the data using unsupervised machine learning.
 We wanted to see if there were any similarities between the data points. We used Hierarchical Clustering and Scientific Python `scipy` for this to group together the data points with similar characteristics.
 The results and plots are shown in `static/images/Dendrograms` folder. The higher the horizontal lines, the less similarity there is between the clusters. 
 
+# Tableau
+For some of the visualizations shown in the webapp, Tableau has been used  <a> https://public.tableau.com/views/Book2_16380679399500/Overview?:language=en-US&:display_count=n&:origin=viz_share_link </a>
 
-## 4. Web application
+The three features that have the most influence on the Life Ladder scores are plotted for each country, where the countries show as clusters on the maps.
+Furthermore, each countries Life Ladder is shown in a bar plot against the years, a bit like a pivot table.
+
+
+
+
+## 5. Web application
 
 Initial design of the webapplication is shown below:
 
 ![Web_overview](https://user-images.githubusercontent.com/85843030/144143640-049c2e47-e94e-4768-904c-35d1f4455603.png)
 
 
+# 6. Results
+
+The results are shown as links and interactive elements on the app.  <a> https://happiness-trial.herokuapp.com </a>
+We can also note that the countries with high Life Ladder score through out the years are the scandinavian countries, and the countries with low Life Ladder are some African countries and Middle Eastan countries. 
 
 
 
 
-`Data` : consists of all the data used. Data has been sorted by years, and also converted to .csv files for each year. This is done using python code.
-
-`Happiness`: contains the files needed to deploy local website for this project.
-
-`app.py` is used for the userinput interactions 
-
-`data.js` is the dataset converted to JSON file in order to be used.
-
-`app.js` is used to build the datatable in the html page. It is also used for the filtering function in the website.
-
-Any images used and CSS are in the subfolders in Happiness folder
-
-`Machine_Learning`: correlation, hierarchical clustering, multi linear regression models files are in this folder. 
-
-`static` subfolder contains images and plots for latest analysis
 
