@@ -33,6 +33,7 @@ In order to read in the dataset in `JavaScript`, the .csv file had to be convert
 ## 3.1 Scikit-Learn
 Looking at the descriptions in <a> https://worldhappiness.report </a> website, it is clear that the Life Ladder score is connected to 8 indicators of nation's economic and social developments. For this reason, it was decided to use Multi Linear Regression Model, to build a supervised machine learning model for prediction of the life Ladder.
 For this, the LinearRegression module from `Scikit-Learn` (Sklearn) Python library was used.
+The dependent variable (y) is taken to be the Life Ladder column, and the remaining 8 columns to be the features.
 The linear equation is as follows:
 
 <ins>Regression Equation:</ins>
@@ -53,16 +54,16 @@ Furthermore, we wanted to explore the data using unsupervised machine learning.
 We wanted to see if there were any similarities between the data points. We used Hierarchical Clustering and Scientific Python `scipy` for this to group together the data points with similar characteristics.
 The results and plots are shown in `static/images/Dendrograms` folder. The higher the horizontal lines, the less similarity there is between the clusters. 
 
-# Tableau
+# 4. Tableau
 For some of the visualizations shown in the webapp, Tableau has been used  <a> https://public.tableau.com/views/Book2_16380679399500/Overview?:language=en-US&:display_count=n&:origin=viz_share_link </a>
 
-The three features that have the most influence on the Life Ladder scores are plotted for each country, where the countries show as clusters on the maps.
+The average values for the three most influential features are plotted using clustering of the countries.
 Furthermore, each countries Life Ladder is shown in a bar plot against the years, a bit like a pivot table.
 
 
 
 
-## 5. Web application
+# 5. Web application
 
 Initial design of the webapplication is shown below:
 
