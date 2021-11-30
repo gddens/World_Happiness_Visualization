@@ -8,6 +8,11 @@ Since the dataset had missging column values, it was decided to drop those rows,
 `Data_Sorting.ipynb`. The resulting files are shown in the `Data_sorting` file. Further data sorting was carried out using python for inserting data into <ins> Tableau </ins> 
 
 
+## 2.1 .JSON
+In order to read in the dataset in `JavaScript`, the .csv file had to be converted into a .JSON file. This was done using a converter website <ins>https://www.convertcsv.com/csv-to-json.htm</ins>. The result file is saved in 'static/data.js'
+
+
+
 # 3.Machine Learning
 ## 3.1 Scikit-Learn
 Looking at the descriptions in <a> https://worldhappiness.report </a> website, it is clear that the Life Ladder score is connected to 8 indicators of nation's economic and social developments. For this reason, it was decided to use Multi Linear Regression Model, to build a supervised machine learning model for prediction of the life Ladder.
@@ -33,15 +38,15 @@ We wanted to see if there were any similarities between the data points. We used
 The results and plots are shown in `static/images/Dendrograms` folder. The higher the horizontal lines, the less similarity there is between the clusters. 
 
 
+## 4. Web application
+
+Initial design of the webapplication is shown below:
+
+![Web_overview](https://user-images.githubusercontent.com/85843030/144143640-049c2e47-e94e-4768-904c-35d1f4455603.png)
 
 
 
 
-
-
-
-
-The data set was converted to JSON file using <ins>https://www.convertcsv.com/csv-to-json.htm</ins> website.
 
 
 `Data` : consists of all the data used. Data has been sorted by years, and also converted to .csv files for each year. This is done using python code.
