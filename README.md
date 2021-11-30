@@ -1,4 +1,22 @@
 
+# Project Overview:
+The aim of this project is to create a machine learning model to predict one's happiness score (Life_Ladder) based on 8 features. 
+
+# Data
+The datasets used is taken from <a> https://worldhappiness.report </a> and is DataPanelWHR2021C2.xls. This file has been saved as a .csv file DataPanelWHR2021C2.csv
+Since the dataset had missging column values, it was decided to drop those rows, where we had missing values. The data sorting and cleaning was done using <ins>python</ins>
+`Data_Sorting.ipynb`. The resulting files are shown in the `Data_sorting` file. Further data sorting was carried out using python for inserting data into <ins> Tableau </ins> 
+
+`Data`
+- DataPanelWHR2021C2.csv
+`Data_sorting`
+- DataPanelWHR2021C2.csv
+
+
+`python`- for sorting data 
+
+
+
 
 `Data` : consists of all the data used. Data has been sorted by years, and also converted to .csv files for each year. This is done using python code.
 
