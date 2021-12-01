@@ -1,17 +1,30 @@
+# World_Happiness_Visualization
 
-# 1. Machine Learning and Visualization Overview:
+**Life_ladder_by_country**
+https://worldhappiness.report/ed/2021/#appendices-and-data
+![Life_ladder](https://user-images.githubusercontent.com/85839235/140621693-465df65b-a2e8-49fe-907c-1e273fd1a5e6.png)
+
+## Project Overview
+Perform statistical analysis with the Life Ladder metrics that meaure perceived satisfaction and quality of life between the years 2008-2020.
+
+## Links
+* Google Slides presentation: https://docs.google.com/presentation/d/1-TAnhkwUNM6IS-IQDcpyB-aw7qAN2UXNCbUCFCnAhDA/edit#slide=id.p
+* Heroku App (dashboard): https://happiness-trial.herokuapp.com/
+* Tableau Story: https://public.tableau.com/app/profile/isabella.helliwell/viz/Book2_16380679399500/Overview
+
+## 1. Machine Learning and Visualization Overview:
 The aim is to create a machine learning model to predict one's happiness score (Life_Ladder) based on 8 features. 
 
-# 2. Data
+## 2. Data
 The datasets used is taken from <a> https://worldhappiness.report </a> and is DataPanelWHR2021C2.xls. This file has been saved as a .csv file DataPanelWHR2021C2.csv
 Since the dataset had missging column values, it was decided to drop those rows, where we had missing values. The data sorting and cleaning was done using <ins>python</ins>
 `Data_Sorting.ipynb`. The resulting files are shown in the `Data_sorting` file. Further data sorting was carried out using python for inserting data into <ins> Tableau </ins> 
 
 
-## 2.1 .JSON
+### 2.1 .JSON
 In order to read in the dataset in `JavaScript`, the .csv file had to be converted into a .JSON file. This was done using a converter website <ins>https://www.convertcsv.com/csv-to-json.htm</ins>. The result file is saved in 'static/data.js'
 
-## 2.2 File Structure
+### 2.2 File Structure
 
 `Data` : consists of all the data used. Data has been sorted by years, and also converted to .csv files for each year. This is done using python code.
 
@@ -29,8 +42,8 @@ In order to read in the dataset in `JavaScript`, the .csv file had to be convert
 
 `static` subfolder contains images and plots for latest analysis
 
-# 3.Machine Learning
-## 3.1 Scikit-Learn
+## 3.Machine Learning
+### 3.1 Scikit-Learn
 Looking at the descriptions in <a> https://worldhappiness.report </a> website, it is clear that the Life Ladder score is connected to 8 indicators of nation's economic and social developments. For this reason, it was decided to use Multi Linear Regression Model, to build a supervised machine learning model for prediction of the life Ladder.
 For this, the LinearRegression module from `Scikit-Learn` (Sklearn) Python library was used.
 The dependent variable (y) is taken to be the Life Ladder column, and the remaining 8 columns to be the features.
@@ -49,12 +62,12 @@ Model coefficients:[ 0.40974578  1.85602309  0.02493523  0.39578739  0.28164724 
 
 Looking at the model evaluation, <b>R=77% </b>, we can assume that the model is a good fit in this instance.
 
-## 3.2 Hierarchical Clustering
+### 3.2 Hierarchical Clustering
 Furthermore, we wanted to explore the data using unsupervised machine learning.  
 We wanted to see if there were any similarities between the data points. We used Hierarchical Clustering and Scientific Python `scipy` for this to group together the data points with similar characteristics.
 The results and plots are shown in `static/images/Dendrograms` folder. The higher the horizontal lines, the less similarity there is between the clusters. 
 
-# 4. Tableau
+## 4. Tableau
 For some of the visualizations shown in the webapp, Tableau has been used  <a> https://public.tableau.com/views/Book2_16380679399500/Overview?:language=en-US&:display_count=n&:origin=viz_share_link </a>
 
 The average values for the three most influential features are plotted using clustering of the countries.
@@ -63,19 +76,25 @@ Furthermore, each countries Life Ladder is shown in a bar plot against the years
 
 
 
-# 5. Web application
+## 5. Web application
 
 Initial design of the webapplication is shown below:
 
 ![Web_overview](https://user-images.githubusercontent.com/85843030/144143640-049c2e47-e94e-4768-904c-35d1f4455603.png)
 
 
-# 6. Results
+## 6. Results
 
 The results are shown as links and interactive elements on the app.  <a> https://happiness-trial.herokuapp.com </a>
 We can also note that the countries with high Life Ladder score through out the years are the scandinavian countries, and the countries with low Life Ladder are some African countries and Middle Eastan countries. 
 
-
-
-
-
+### Methodology
+#### Life Ladder ####
+  - Using the Life Ladder dataset, use the most recent year data for each country in order to perform statistical analysis. Visualize each country perceived life satisfaction score using Tableau. 
+  - Using the Life Ladder dataset, use the most recent year data for each country in order to perform a Linear Regression Supervised Machine Learning and train a model with some of the data with the goal of finding an equation that would predict life satisfaction.
+  - Using the Supervised Machine Learning model to predict a Life Ladder score based on user inputs. 
+  
+### Visualizations
+  - Plot each country most recent Life Ladder data and color code it by their Life Ladder Score and Hierarchial Clustering. 
+  - Use Tableau for visualizations found from statistical analysis. 
+  - Create a website to showcase results as well as allow users to input their own data to predict their Life Ladder score. 
