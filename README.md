@@ -98,3 +98,4 @@ We can also note that the countries with high Life Ladder score through out the 
   - Plot each country most recent Life Ladder data and color code it by their Life Ladder Score and Hierarchial Clustering. 
   - Use Tableau for visualizations found from statistical analysis. 
   - Create a website to showcase results as well as allow users to input their own data to predict their Life Ladder score. 
+
