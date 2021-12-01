@@ -1,6 +1,6 @@
 
-# 1. Project Overview:
-The aim of this project is to create a machine learning model to predict one's happiness score (Life_Ladder) based on 8 features. 
+# 1. Machine Learning and Visualization Overview:
+The aim is to create a machine learning model to predict one's happiness score (Life_Ladder) based on 8 features. 
 
 # 2. Data
 The datasets used is taken from <a> https://worldhappiness.report </a> and is DataPanelWHR2021C2.xls. This file has been saved as a .csv file DataPanelWHR2021C2.csv
